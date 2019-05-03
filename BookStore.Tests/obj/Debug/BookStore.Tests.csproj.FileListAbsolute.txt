@@ -1,0 +1,86 @@
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.dll.config
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.pdb
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Domain.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Moq.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Common.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Mvc.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Helpers.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Mvc.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Razor.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\WebActivator.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Domain.pdb
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Moq.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.pdb
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Common.pdb
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Common.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Mvc.pdb
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Mvc.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Helpers.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Mvc.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Razor.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.dll
+c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.csprojResolveAssemblyReference.cache
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\csc.exe
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\vbc.exe
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.dll.config
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.Domain.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.UI.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Moq.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Common.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Mvc.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Razor.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\WebActivator.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\EntityFramework.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.Domain.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\BookStore.UI.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Moq.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Common.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Common.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Mvc.pdb
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\Ninject.Web.Mvc.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Razor.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\EntityFramework.xml
+E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Optimization.xml
+E:\Projects\Training\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.dll
+E:\Projects\Training\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.pdb

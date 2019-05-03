@@ -1,0 +1,37 @@
+﻿@model BookStore.UI.Models.CartIndexViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Your cart</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-left">Item</th>
+            <th class="text-left">Quantity</th>
+            <th class="text-right">Price</th>
+            <th class="text-right">SubTotals</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cLine in Model.cart.CartLines)
+        {
+            <tr>
+                <td class="text-left">@cLine.Book.Title</td>
+                <td class="text-left">@cLine.Quantity</td>
+                <td class="text-right">@cLine.Book.Price.ToString("c")</td>
+                <td class="text-right">@(cLine.Book.Price *cLine.Quantity) </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Total: </td>
+            <td class="text-right">@Model.cart.ComputeTotalValue().ToString("c")</td>
+        </tr>
+    </tfoot>
+</table>
+<div class="text-center">
+    <a class="btn btn-primary" href="@Model.returnUrl">Continue shopping</a>
+</div>
