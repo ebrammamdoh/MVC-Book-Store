@@ -38,4 +38,3 @@ E:\Projects\Training\BookStore\BookStore.Domain\bin\Debug\System.Web.WebPages.De
 E:\Projects\Training\BookStore\BookStore.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 E:\Projects\Training\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
 E:\Projects\Training\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb
-E:\Projects\Training\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csprojResolveAssemblyReference.cache

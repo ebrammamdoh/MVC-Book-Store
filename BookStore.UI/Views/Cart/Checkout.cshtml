@@ -1,0 +1,56 @@
+﻿@model BookStore.Domain.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+<p>Please enter your details, and we'll ship your books</p>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <h3>Ship to</h3>
+    <div class="form-group">
+        <label>Name: </label>
+        @Html.TextBoxFor(n=>n.name, new { @Class = "form-control"})
+    </div>
+    <h3>Address</h3>
+    foreach (var property in ViewData.ModelMetadata.Properties)
+    {
+        if (property.PropertyName != "name" && property.PropertyName != "giftWrap")
+        {
+            <div class="form-group">
+                <label>@(property.DisplayName ?? property.PropertyName): </label>
+                @Html.TextBox(property.PropertyName,null, new { @Class = "form-control" })
+            </div>
+        }
+    }
+    <div class="form-group">
+        <label>Line1: </label>
+        @Html.TextBoxFor(n => n.Line1, new { @Class = "form-control" })
+    </div>
+    <div>
+        @*<div class="form-group">
+                <label>Line2: </label>
+                @Html.TextBoxFor(n => n.Line2, new { @Class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>City: </label>
+                @Html.TextBoxFor(n => n.city, new { @Class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>State: </label>
+                @Html.TextBoxFor(n => n.state, new { @Class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Country: </label>
+                @Html.TextBoxFor(n => n.country, new { @Class = "form-control" })
+            </div>*@
+    </div>
+    <div class="checkbox">
+        <label>@Html.EditorFor(n=>n.giftWrap) Gift wrap these book(s)</label>
+    </div>
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Complete order"/>
+    </div>
+}

@@ -1,10 +1,10 @@
 ﻿using BookStore.Domain.Abstract;
 using BookStore.Domain.Context;
-using BookStore.Domain.Entities;
 using Moq;
 using Ninject;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -34,7 +34,14 @@ namespace BookStore.UI.Infrastructure
             //);
 
             //kernel.Bind<IBookRepository>().ToConstant(new EFBookRepository());
+            EmailSetting emailSetting = new EmailSetting
+            {
+                writeAsFile = bool.Parse(ConfigurationManager.AppSettings["email.writeAsFile"] ?? "false")
+            };
+
             kernel.Bind<IBookRepository>().To<EFBookRepository>();
+            kernel.Bind<IOrderProcessor>().To<OrderProcessor>().WithConstructorArgument("_emailSetting", emailSetting);
+
         }
 
         public object GetService(Type serviceType)

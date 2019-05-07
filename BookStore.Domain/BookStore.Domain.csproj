@@ -78,11 +78,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IBookRepository.cs" />
+    <Compile Include="Abstract\IOrderProcessor.cs" />
     <Compile Include="Context\DataContext.cs" />
     <Compile Include="Context\EFBookRepository.cs" />
+    <Compile Include="Context\EmailSetting.cs" />
+    <Compile Include="Context\OrderProcessor.cs" />
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\CartLine.cs" />
+    <Compile Include="Entities\ShippingDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

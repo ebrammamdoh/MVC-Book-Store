@@ -12,47 +12,76 @@ namespace BookStore.UI.Controllers
     public class CartController : Controller
     {
         private IBookRepository repo;
-        public CartController(IBookRepository _repo)
+        private IOrderProcessor orderProcessor;
+        public CartController(IBookRepository _repo, IOrderProcessor _orderProcessor)
         {
             repo = _repo;
+            orderProcessor = _orderProcessor;
         }
-        public RedirectToRouteResult AddToCart(int BookId, string returnUrl)
+        public RedirectToRouteResult AddToCart(Cart cart, int BookId, string returnUrl)
         {
             Book book = repo.Books.Where(b => b.BookId == BookId).FirstOrDefault();
             if(book != null)
             {
-                GetCart().AddItem(book);
+                cart.AddItem(book);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
-        public RedirectToRouteResult RemoveFromCart(int bookId, string returnUrl)
+        public RedirectToRouteResult RemoveFromCart(Cart cart, int bookId, string returnUrl)
         {
             Book book = repo.Books.Where(b => b.BookId == bookId).FirstOrDefault();
             if (book != null)
             {
-                GetCart().RemoveItem(book);
+                cart.RemoveItem(book);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
 
-        private Cart GetCart()
-        {
-            Cart cart = Session["Cart"] as Cart;
-            if(cart == null)
-            {
-                cart = new Cart();
-                Session["Cart"] = cart;
-            }
-            return cart;
-        }
+        //private Cart GetCart()
+        //{
+        //    Cart cart = Session["Cart"] as Cart;
+        //    if(cart == null)
+        //    {
+        //        cart = new Cart();
+        //        Session["Cart"] = cart;
+        //    }
+        //    return cart;
+        //}
 
-        public ActionResult Index(string returnUrl)
+        public ActionResult Index(Cart cart, string returnUrl)
         {
             return View(new CartIndexViewModel
             {
-                cart = GetCart(),
+                cart = cart,
                 returnUrl = returnUrl
             });
+        }
+        public PartialViewResult Summary(Cart cart)
+        {
+            return PartialView(cart);
+        }
+        public ViewResult Checkout()
+        {
+            return View(new ShippingDetails());
+        }
+        [HttpPost ]
+        public ViewResult Checkout(Cart cart, ShippingDetails shipDetails)
+        {
+            if(cart.CartLines.Count() == 0)
+            {
+                ModelState.AddModelError("", "Sorry your cart is empty");
+            }
+            if (ModelState.IsValid)
+            {
+                orderProcessor.ProcessOrder(cart, shipDetails);
+                cart.Clear();
+                return View("Completed");
+            }
+            else
+            {
+                return View(shipDetails);
+            }
+            
         }
     }
 }
