@@ -4,6 +4,7 @@
     @Html.ActionLink("Checkout", "Index", "Cart", new { returnUrl = Request.Url.PathAndQuery },
     new { @Class="btn btn-default navbar-btn" })
 </div>
+
 <div class="navbar-text navbar-right">
     <b>Your cart: </b>
     @Model.CartLines.Sum(b=>b.Quantity) book(s),

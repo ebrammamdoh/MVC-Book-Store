@@ -21,7 +21,9 @@ namespace BookStore.UI.Controllers
             IEnumerable<string> categories = repo.Books
                                             .Select(b => b.Category)
                                             .Distinct();
-            return PartialView(categories);
+            //string viewName = mobileLayout ? "MenuHorizontal" : "Menu";
+            return PartialView("MenuFlex", categories);
         }
+
     }
 }
