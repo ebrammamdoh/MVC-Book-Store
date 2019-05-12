@@ -1,5 +1,7 @@
 ﻿using BookStore.Domain.Abstract;
 using BookStore.Domain.Context;
+using BookStore.UI.Infrastructure.Abstract;
+using BookStore.UI.Infrastructure.Concret;
 using Moq;
 using Ninject;
 using System;
@@ -22,18 +24,6 @@ namespace BookStore.UI.Infrastructure
 
         private void AddBinding()
         {
-            //kernel.Bind<IBookRepository>().To<Book>();
-            //Mock<IBookRepository> mock = new Mock<IBookRepository>();
-            //mock.Setup(m => m.Books).Returns(
-            //    new List<Book>
-            //    {
-            //        new Book {ISBN=1, Title="Book1", Description="Desc1", Category="comedy", Price=101.5m, Author="ahmed khaled" },
-            //        new Book {ISBN=2, Title="Book2", Description="Desc2", Category="drama", Price=157.3m, Author="ahmed khaled" },
-            //        new Book {ISBN=3, Title="Book3", Description="Desc3", Category="comedy", Price=45.1m, Author="ahmed khaled" },
-            //    }
-            //);
-
-            //kernel.Bind<IBookRepository>().ToConstant(new EFBookRepository());
             EmailSetting emailSetting = new EmailSetting
             {
                 writeAsFile = bool.Parse(ConfigurationManager.AppSettings["email.writeAsFile"] ?? "false")
@@ -41,6 +31,8 @@ namespace BookStore.UI.Infrastructure
 
             kernel.Bind<IBookRepository>().To<EFBookRepository>();
             kernel.Bind<IOrderProcessor>().To<OrderProcessor>().WithConstructorArgument("_emailSetting", emailSetting);
+
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
 
         }
 

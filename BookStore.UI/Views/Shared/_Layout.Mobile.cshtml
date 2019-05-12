@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    @*<link rel="stylesheet" href="~/Scripts/jquery-1.10.2.min.js"/>*@
+    @*<link rel="stylesheet" href="~/Content/"/>*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div>
+        <div data-role="page" id="page1">
+            <div data-theme="true" data-role="header" data-position="fixed">
+                <h3>Bookstore</h3>
+                @Html.Action("Menu", "Nav")
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-dividertheme="b" data-inset="false">
+                     @RenderBody()
+                </ul>
+            </div>       
+        </div>      
+    </div>
+</body>
+</html>

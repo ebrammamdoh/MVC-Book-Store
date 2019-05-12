@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BookStore.Domain.Entities.Book>
+@{
+    ViewBag.Title = "Admin: Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div> 
+        <h2>Administration Page</h2>
+        <p>@Html.ActionLink("Create New", "Create")</p>
+        <table class="table">
+            <tr>
+                <th>@Html.DisplayNameFor(m => m.Title)</th>
+                <th>@Html.DisplayNameFor(m => m.Category)</th>
+                <th>@Html.DisplayNameFor(m => m.Description)</th>
+                <th>@Html.DisplayNameFor(m => m.Price)</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(m => item.Title)</td>
+                    <td>@Html.DisplayFor(m => item.Category)</td>
+                    <td>@Html.DisplayFor(m => item.Description)</td>
+                    <td>@Html.DisplayFor(m => item.Price)</td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { bookId = item.BookId }) |
+                        @Html.ActionLink("Details", "Details", new { bookId = item.BookId }) |
+                        @Html.ActionLink("Delete", "Delete", new { bookId = item.BookId }) |
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
