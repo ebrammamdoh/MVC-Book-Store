@@ -108,3 +108,5 @@ E:\Projects\Training\BookStore\BookStore.UI\bin\EntityFramework.xml
 E:\Projects\Training\BookStore\BookStore.UI\obj\Debug\BookStore.UI.csprojResolveAssemblyReference.cache
 E:\Projects\Training\BookStore\BookStore.UI\obj\Debug\BookStore.UI.dll
 E:\Projects\Training\BookStore\BookStore.UI\obj\Debug\BookStore.UI.pdb
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.UI\bin\EntityFramework.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.UI\bin\EntityFramework.xml

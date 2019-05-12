@@ -1,0 +1,44 @@
+﻿@model BookStore.Domain.Entities.Book
+
+@{
+    ViewBag.Title = "Admin: Edit" + Model.Title;
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<div class="panel">
+    <div class="panel-heading">
+        <h3 class="text-center">Edit @Model.Title</h3>
+    </div>
+
+        @using (Html.BeginForm())
+        {
+            <div class="panel-body">
+                @Html.HiddenFor(b => b.BookId)
+                @foreach (var property in ViewData.ModelMetadata.Properties)
+                {
+                    if (property.PropertyName != "BookId")
+                    {
+                        <div class="form-group">
+                            <label>@Html.DisplayName(property.DisplayName ?? property.PropertyName)</label>
+                            @if (property.PropertyName == "Description")
+                            {
+                                Html.TextArea(property.PropertyName, null, new { @Class = "form-control", rows = 5 });
+                            }
+                            else
+                            {
+                                @Html.TextBox(property.PropertyName, null, new { @Class = "form-control"})
+                            }
+                            @Html.ValidationMessage(property.PropertyName)
+                        </div>
+                    }
+                }
+                
+            </div>
+            <div class="panel-footer">
+                @Html.ActionLink("Back to List", "Index", null, new { @Class = "btn btn-default" })
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        }
+</div>

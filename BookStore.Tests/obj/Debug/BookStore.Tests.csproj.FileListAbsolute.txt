@@ -3,7 +3,6 @@ c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.dll
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Tests.pdb
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.Domain.dll
-c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Moq.dll
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Ninject.dll
@@ -30,7 +29,6 @@ c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.xml
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.dll
 c:\users\pc\documents\visual studio 2015\Projects\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.pdb
 E:\Projects\Training\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.csprojResolveAssemblyReference.cache
@@ -84,3 +82,21 @@ E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\EntityFramework.xml
 E:\Projects\Training\BookStore\BookStore.Tests\bin\Debug\System.Web.Optimization.xml
 E:\Projects\Training\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.dll
 E:\Projects\Training\BookStore\BookStore.Tests\obj\Debug\BookStore.Tests.pdb
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\csc.exe
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\vbc.exe
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.UI.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\EntityFramework.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\BookStore.UI.pdb
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\EntityFramework.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Tests\bin\Debug\System.Web.Optimization.xml

@@ -1,44 +1,67 @@
 ﻿@model IEnumerable<BookStore.Domain.Entities.Book>
+
 @{
-    ViewBag.Title = "Admin: Index";
-    Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<!DOCTYPE html>
+<h2>Book Index</h2>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
-    <div> 
-        <h2>Administration Page</h2>
-        <p>@Html.ActionLink("Create New", "Create")</p>
-        <table class="table">
+<div class="panel panel-default" >
+    <div class="panel-heading">
+        <h3>All Books</h3>
+    </div>
+    <div class="panel-body">     
+        <table class="table table-striped">
             <tr>
-                <th>@Html.DisplayNameFor(m => m.Title)</th>
-                <th>@Html.DisplayNameFor(m => m.Category)</th>
-                <th>@Html.DisplayNameFor(m => m.Description)</th>
-                <th>@Html.DisplayNameFor(m => m.Price)</th>
+                <th class="text-right">
+                    ID
+                </th>
+                <th class="text-right">
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <th class="text-right">
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Author)
+                </th>
+                <th class="text-center">Delete</th>
             </tr>
+
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@Html.DisplayFor(m => item.Title)</td>
-                    <td>@Html.DisplayFor(m => item.Category)</td>
-                    <td>@Html.DisplayFor(m => item.Description)</td>
-                    <td>@Html.DisplayFor(m => item.Price)</td>
+                    <td class="text-right">
+                        @Html.DisplayFor(modelItem => item.BookId)
+                    </td>
+                    <td class="text-right">
+                        @Html.ActionLink(item.Title, "Edit", new { id = item.BookId })
+                    </td>
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { bookId = item.BookId }) |
-                        @Html.ActionLink("Details", "Details", new { bookId = item.BookId }) |
-                        @Html.ActionLink("Delete", "Delete", new { bookId = item.BookId }) |
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Author)
+                    </td>
+                    <td class="text-center">
+                        @Html.ActionLink("Delete", "Delete", new { id = item.BookId }, new { @Class="btn btn-danger btn-xs"})
                     </td>
                 </tr>
             }
+
         </table>
     </div>
-</body>
-</html>
+    <div class="panel-footer">
+        <p>
+            @Html.ActionLink("Create New", "Create", null, new { @Class = "btn btn-default " })
+        </p>
+    </div>
+</div>
+
