@@ -141,6 +141,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Controllers\AccountController.cs" />
+>>>>>>> 58c2c37351e018a12731e1082330490bdfa9bf6f
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\CartController.cs" />
@@ -149,10 +153,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HtmlHelper\PagingHelper.cs" />
+    <Compile Include="Infrastructure\Abstract\IAuthProvider.cs" />
     <Compile Include="Infrastructure\Binders\CartModelBinder.cs" />
+    <Compile Include="Infrastructure\Concret\FormsAuthProvider.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\BookListViewModel.cs" />
     <Compile Include="Models\CartIndexViewModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\PagingInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -200,6 +207,12 @@
     <Content Include="Views\Nav\MenuFlex.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Edit.cshtml" />
+>>>>>>> 58c2c37351e018a12731e1082330490bdfa9bf6f
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -105,6 +105,8 @@
     <Compile Include="BookControllerTest.cs" />
     <Compile Include="NavControllerTest.cs" />
     <Compile Include="CartTest.cs" />
+    <Compile Include="AdminSecurityTest.cs" />
+    <Compile Include="AdminTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

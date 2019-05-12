@@ -22,5 +22,23 @@ namespace BookStore.Domain.Context
                 return context.Books;
             }
         }
+
+        public void SaveBook(Book book)
+        {
+            Book oldBook = context.Books.Where(b => b.BookId == book.BookId).FirstOrDefault();
+            if (oldBook == null)
+            {
+                context.Books.Add(book);
+            }
+            else
+            {
+                oldBook.Author = book.Author;
+                oldBook.Category = book.Author;
+                oldBook.Description = book.Description;
+                oldBook.Price = book.Price;
+                oldBook.Title = book.Title;
+            }
+            context.SaveChanges();
+        }
     }
 }
