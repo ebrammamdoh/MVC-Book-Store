@@ -1,8 +1,5 @@
 ﻿using BookStore.Domain.Abstract;
-<<<<<<< HEAD
-=======
 using BookStore.Domain.Entities;
->>>>>>> 58c2c37351e018a12731e1082330490bdfa9bf6f
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,20 +17,14 @@ namespace BookStore.UI.Controllers
             repo = _repo;
         }
         // GET: Admin
-<<<<<<< HEAD
-        public ActionResult Index()
-        {
-            return View(repo.Books);
-        }
-=======
         public ViewResult Index()
         {
             return View(repo.Books);
         }
-        public ViewResult Create()
-        {
-            return View(repo.Books);
-        }
+        //public ViewResult Create()
+        //{
+        //    return View(repo.Books);
+        //}
         [HttpGet]
         public ViewResult Edit(int bookId)
         {
@@ -55,6 +46,19 @@ namespace BookStore.UI.Controllers
             }
 
         }
->>>>>>> 58c2c37351e018a12731e1082330490bdfa9bf6f
+        public ViewResult Create()
+        {
+            return View("Edit", new Book());
+        }
+        [HttpGet]
+        public ActionResult Delete(int bookId)
+        {
+            Book delBook = repo.DeleteBook(bookId);
+            if(delBook != null)
+            {
+                TempData["message"] = delBook.Title + " was deleted";
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

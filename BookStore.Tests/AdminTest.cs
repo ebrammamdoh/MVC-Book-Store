@@ -99,5 +99,21 @@ namespace BookStore.Tests
             mock.Verify(b => b.SaveBook(It.IsAny<Book>()), Times.Never);
             Assert.IsNotInstanceOfType(result, typeof(ViewResult));
         }
+        [TestMethod]
+        public void Can_Delete_Valid_Book()
+        {
+            Mock<IBookRepository> mock = new Mock<IBookRepository>();
+            mock.Setup(p => p.Books).Returns(new Book[]
+            {
+                new Book { BookId = 1, Title = "Book1" },
+                new Book { BookId = 2, Title = "Book2" },
+                new Book { BookId = 3, Title = "Book3" },
+            });
+
+            AdminController controller = new AdminController(mock.Object);
+            ActionResult result = controller.Delete(1);
+
+            mock.Verify(b => b.DeleteBook(1));
+        }
     }
 }

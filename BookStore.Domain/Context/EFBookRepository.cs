@@ -23,6 +23,17 @@ namespace BookStore.Domain.Context
             }
         }
 
+        public Book DeleteBook(int bookId)
+        {
+            Book oldBook = context.Books.Where(b => b.BookId == bookId).FirstOrDefault();
+            if(oldBook != null)
+            {
+                context.Books.Remove(oldBook);
+                context.SaveChanges();
+            }
+            return oldBook;
+        }
+
         public void SaveBook(Book book)
         {
             Book oldBook = context.Books.Where(b => b.BookId == book.BookId).FirstOrDefault();
